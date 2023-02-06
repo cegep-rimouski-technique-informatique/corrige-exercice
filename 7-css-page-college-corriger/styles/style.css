@@ -1,0 +1,135 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+  font-family: sansSerif;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+* {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.15em;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+}
+
+a {
+  color: #a66;
+}
+
+h2 + p {
+  text-indent: 1.5em;
+}
+
+/* Ajoute l'image après chaque lien du premier paragraphe */
+h2 + p > a::after {
+    background-image: url('../images/external-link.png');
+    background-size: 1em 1em;
+    display: inline-block;
+    width: 1em; 
+    height: 1em;
+    content:"";
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+a:active {
+  color: #a10;
+}
+
+ul {
+  list-style-type: square;
+  line-height: 2em;
+}
+
+ol {
+  list-style-type: lower-latin;
+  line-height: 2em;
+}
+
+nav li {
+  border: 2px solid #a66;
+  /* Centrer le texte à la verticale et à l'horizontale */
+  text-align:center;
+  padding: 20px 0;
+  
+  width: 200px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  font-size: 1.3em;
+  margin-left: -2em;
+  margin-bottom: 0.5em;
+}
+
+nav a:link {
+  text-decoration: none;
+}
