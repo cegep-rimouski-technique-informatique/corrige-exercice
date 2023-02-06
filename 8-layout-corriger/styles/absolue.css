@@ -1,0 +1,35 @@
+/* Début */
+div {
+    border-style: solid;
+    border-radius: 1px;
+    position: absolute;
+    background-color: white;
+}
+
+.div1 {
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.div2 {
+    top: 180px;
+    left: 180px;
+    width: 150px;
+    height: 200px;
+}
+
+.div3 {
+    top: 350px;
+    left: 60px;
+    width: 350px;
+    height: 100px;
+}
+
+.div4 {
+    top: 30px;
+    left: 390px;
+    width: 100px;
+    height: 390px;
+}
