@@ -17,7 +17,13 @@ window.onload = () => {
 
   let nouveauLi = document.createElement("li");
   nouveauLi.appendChild(document.createTextNode("Terre"));
-  document.getElementsByTagName("ul")[0].append(nouveauLi);
+  let parent = document.getElementsByTagName("ul")[0];
+  // À la fin
+  //parent.appendChild(nouveauLi);
+
+  //Défis
+  let child = parent.firstChild
+  parent.insertBefore(nouveauLi, child);
 
   // 5. Ajoutez l'attribut href manquant à la balise lien de l'image d'arbre.
   // avec la valeur  href="https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg"
